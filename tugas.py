@@ -24,12 +24,7 @@ def sensor_data():
 
 @app.route('/sensor/data', methods=['GET'])
 def get_sensor_data():
-  
-  # Get the sensor data from the dummy list
-  print(sensor_data_list)
-
-  # Return the sensor data
   return jsonify(sensor_data_list)
 
 if __name__ == '__main__':
-  app.run(debug=True, host='0.0.0.0', port='8080')
+  app.run()
